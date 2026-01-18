@@ -1,0 +1,6 @@
+*.py
+*.txt
+__pycache__/
+.env
+.env.*
+docker-compose*

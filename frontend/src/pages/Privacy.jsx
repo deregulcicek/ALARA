@@ -41,7 +41,7 @@ const Privacy = () => {
             <ul>
               <li><strong>Kimlik Verileri:</strong> Ad, soyad, doğum tarihi</li>
               <li><strong>İletişim Verileri:</strong> E-posta adresi, telefon numarası, adres</li>
-              <li><strong>Sağlık Verileri:</strong> Terapi sürecinde paylaştığınız sağlık bilgileri</li>
+              <li><strong>Sağlık Verileri:</strong> Danışmanlık sürecinde paylaştığınız sağlık bilgileri</li>
               <li><strong>Teknik Veriler:</strong> IP adresi, çerez bilgileri, tarayıcı bilgileri</li>
               <li><strong>İletişim Kayıtları:</strong> E-posta ve telefon görüşmeleri</li>
             </ul>
@@ -49,7 +49,7 @@ const Privacy = () => {
             <h2>3. Kişisel Verilerin İşlenme Amaçları</h2>
             <p>Kişisel verilerinizi aşağıdaki amaçlarla işlemekteyiz:</p>
             <ul>
-              <li>Psikolojik danışmanlık ve terapi hizmetlerinin sunulması</li>
+              <li>Psikolojik danışmanlık hizmetlerinin sunulması</li>
               <li>Randevu planlaması ve takibi</li>
               <li>Hasta dosyası oluşturma ve güncelleme</li>
               <li>Yasal yükümlülüklerin yerine getirilmesi</li>

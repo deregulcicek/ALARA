@@ -42,9 +42,9 @@ const Home = () => {
     <>
       <Helmet>
         <title>Ana Sayfa - Psikolog Alara Okul | Ruh Sağlığı ve Psikolojik Danışmanlık Hizmetleri</title>
-        <meta name="description" content="Profesyonel psikolog hizmetleri ile ruh sağlığınızı destekliyoruz. Bireysel terapi, Eğitim ve danışmanlık hizmetleri." />
+        <meta name="description" content="Profesyonel psikolog hizmetleri ile ruh sağlığınızı destekliyoruz. Bireysel görüşme, Eğitim ve danışmanlık hizmetleri." />
         <meta property="og:title" content="Ana Sayfa - Psikolog Alara Okul | Ruh Sağlığı ve Psikolojik Danışmanlık Hizmetleri" />
-        <meta property="og:description" content="Profesyonel psikolog hizmetleri ile ruh sağlığınızı destekliyoruz. Bireysel terapi, Eğitim ve danışmanlık hizmetleri." />
+        <meta property="og:description" content="Profesyonel psikolog hizmetleri ile ruh sağlığınızı destekliyoruz. Bireysel görüşme, Eğitim ve danışmanlık hizmetleri." />
       </Helmet>
 
       {/* Hero Section */}

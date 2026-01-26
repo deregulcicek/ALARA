@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
-import GalleryModal from '../components/GalleryModal'
+// import GalleryModal from '../components/GalleryModal'
 // import { Camera, ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -129,13 +129,13 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Gallery Modal */}
-      <GalleryModal
+      {/* Gallery Modal - Temporarily disabled */}
+      {/* <GalleryModal
         isOpen={isGalleryOpen}
         onClose={() => setIsGalleryOpen(false)}
         images={galleryImages}
         initialIndex={selectedImageIndex}
-      />
+      /> */}
     </>
   )
 }

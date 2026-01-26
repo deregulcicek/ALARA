@@ -7,7 +7,10 @@ export const blogAPI = axios.create({
 })
 
 export const contactAPI = axios.create({
-  baseURL: `${BASE_URL}/contact`,
+  baseURL: BASE_URL ? `${BASE_URL}/api/contact` : '/api/contact',
+  headers: {
+    'Content-Type': 'application/json',
+  },
 })
 
 // ✅ BLOG FONKSİYONLARI

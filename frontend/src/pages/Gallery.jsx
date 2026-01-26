@@ -38,9 +38,9 @@ const Gallery = () => {
       '17. IB Day',
       'IB Toplantısı İstanbul 2024',
       'KAÇUV Cerrahpaşa - Çapa Hastaneleri Çocuk Onkoloji servisi',
-      'İş Sağlığı ve Güvenliği Farkındalık Eğitimleri görevliliği', // 2. fotoğraf ile 4. fotoğraf yer değiştirdi (eski 4. fotoğraf)
+      'KAÇUV Cerrahpaşa - Çapa Hastaneleri Çocuk Onkoloji servisi', // Sondan 3. ve en sondaki yazılar yer değiştirdi
       'İş Sağlığı ve Güvenliği Farkındalık Eğitimleri görevliliği',
-      'KAÇUV Cerrahpaşa - Çapa Hastaneleri Çocuk Onkoloji servisi' // 2. fotoğraf ile 4. fotoğraf yer değiştirdi (eski 2. fotoğraf)
+      'İş Sağlığı ve Güvenliği Farkındalık Eğitimleri görevliliği' // Sondan 3. ve en sondaki yazılar yer değiştirdi
     ]
     return descriptions[index] || 'Seminer ve etkinlik karesi'
   }

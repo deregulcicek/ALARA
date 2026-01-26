@@ -57,7 +57,7 @@ const Footer = () => {
             <div className="space-y-2 text-gray-300">
               <p>📧 psk.alaraokul@gmail.com</p>
               <p>📞 0545 710 93 11</p>
-              <p>📍 İstanbul, Türkiye</p>
+              <p>📍 İzmit, Türkiye</p>
             </div>
           </div>
         </div>

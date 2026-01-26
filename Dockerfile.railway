@@ -1,0 +1,16 @@
+# Railway deployment Dockerfile
+# Build stage
+FROM node:18 AS build
+WORKDIR /app
+COPY frontend ./frontend
+WORKDIR /app/frontend
+RUN npm install
+RUN npm run build
+
+# Serve stage
+FROM caddy:2-alpine
+COPY --from=build /app/frontend/dist /usr/share/caddy
+COPY Caddyfile.railway /etc/caddy/Caddyfile
+
+# Railway automatically sets PORT environment variable
+# Caddyfile.railway uses {$PORT:80} to use Railway's PORT or default to 80

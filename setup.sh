@@ -173,8 +173,12 @@ echo "🔄 Updating application..."
 # Pull latest changes
 git pull origin main
 
-# Pull latest images
-docker-compose -f docker-compose.prod.yml pull
+# Pull latest backend images
+docker-compose -f docker-compose.prod.yml pull web || true
+
+# Rebuild frontend (Caddy service with built frontend)
+echo "🔨 Rebuilding frontend..."
+docker-compose -f docker-compose.prod.yml build caddy
 
 # Restart services
 docker-compose -f docker-compose.prod.yml down

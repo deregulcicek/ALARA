@@ -100,9 +100,32 @@ const Contact = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Adres</h3>
-                    <p className="text-gray-600">Kocaeli, Türkiye</p>
+                    <p className="text-gray-600 mb-4">Kocaeli, Türkiye</p>
+                    <div className="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1234567890!2d30.0223185!3d40.7549135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb51c88b073ef1%3A0x8aa1fb7f78b88bbb!2sKumla%20Residence!5e0!3m2!1str!2str!4v1706328000000!5m2!1str!2str"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Kumla Residence Konumu"
+                      ></iframe>
+                    </div>
+                    <a
+                      href="https://www.google.com/maps/place/Kumla+Residence/@40.754912,30.0038646,15z/data=!3m1!4b1!4m6!3m5!1s0x14cb51c88b073ef1:0x8aa1fb7f78b88bbb!8m2!3d40.7549135!4d30.0223185!16s%2Fg%2F11yj51tqbk?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-flex items-center text-primary-600 hover:text-primary-700 text-sm font-medium"
+                    >
+                      Haritada Aç
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>

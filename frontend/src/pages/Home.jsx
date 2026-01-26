@@ -278,14 +278,12 @@ const Home = () => {
             <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Galeri</h3>
               <p className="text-gray-600 mb-6">Etkinlik ve seminerlerden kareler</p>
-              <a 
-                href="/gallery"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link 
+                to="/gallery"
                 className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors"
               >
                 📷 Galeriyi Görüntüle →
-              </a>
+              </Link>
             </div>
           </div>
         </div>

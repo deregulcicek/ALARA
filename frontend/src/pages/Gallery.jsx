@@ -9,13 +9,7 @@ const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   
   const [galleryImages] = useState([
-    '/images/gallery-1.jpg',
-    '/images/gallery-2.jpg',
-    '/images/gallery-3.jpg',
-    '/images/gallery-4.jpg',
-    '/images/gallery-5.jpg',
-    '/images/gallery-6.jpg',
-    '/images/gallery-7.jpg',
+    // İlk 7 "Etkinlik ve seminer karesi" kaldırıldı
     '/images/gallery-8.jpg',
     '/images/gallery-9.jpg',
     '/images/gallery-10.jpg',
@@ -26,20 +20,14 @@ const Gallery = () => {
     '/images/gallery-15.jpg',
     '/images/gallery-16.jpg',
     '/images/gallery-17.jpg',
-    '/images/gallery-18.jpg',
+    '/images/gallery-20.jpg', // 2. fotoğraf ile 4. fotoğraf yer değiştirdi (eski 4. fotoğraf)
     '/images/gallery-19.jpg',
-    '/images/gallery-20.jpg'
+    '/images/gallery-18.jpg' // 2. fotoğraf ile 4. fotoğraf yer değiştirdi (eski 2. fotoğraf)
   ])
 
   const getImageDescription = (index) => {
     const descriptions = [
-      'Etkinlik ve seminer karesi',
-      'Etkinlik ve seminer karesi',
-      'Etkinlik ve seminer karesi',
-      'Etkinlik ve seminer karesi',
-      'Etkinlik ve seminer karesi',
-      'Etkinlik ve seminer karesi',
-      'Etkinlik ve seminer karesi',
+      // İlk 7 "Etkinlik ve seminer karesi" kaldırıldı
       'İzmit Kültür ve Yaşam Derneği - Kadına Yönelik Psikolojik Şiddet ve Farkındalık semineri',
       'İzmit Kültür ve Yaşam Derneği - Kadına Yönelik Psikolojik Şiddet ve Farkındalık semineri',
       'İzmit Kültür ve Yaşam Derneği - Kadına Yönelik Psikolojik Şiddet ve Farkındalık semineri',
@@ -50,9 +38,9 @@ const Gallery = () => {
       '17. IB Day',
       'IB Toplantısı İstanbul 2024',
       'KAÇUV Cerrahpaşa - Çapa Hastaneleri Çocuk Onkoloji servisi',
-      'KAÇUV Cerrahpaşa - Çapa Hastaneleri Çocuk Onkoloji servisi',
+      'İş Sağlığı ve Güvenliği Farkındalık Eğitimleri görevliliği', // 2. fotoğraf ile 4. fotoğraf yer değiştirdi (eski 4. fotoğraf)
       'İş Sağlığı ve Güvenliği Farkındalık Eğitimleri görevliliği',
-      'İş Sağlığı ve Güvenliği Farkındalık Eğitimleri görevliliği'
+      'KAÇUV Cerrahpaşa - Çapa Hastaneleri Çocuk Onkoloji servisi' // 2. fotoğraf ile 4. fotoğraf yer değiştirdi (eski 2. fotoğraf)
     ]
     return descriptions[index] || 'Seminer ve etkinlik karesi'
   }

@@ -131,7 +131,7 @@ const Privacy = () => {
               aşağıdaki iletişim bilgilerinden bize ulaşabilirsiniz:
             </p>
             <ul>
-              <li><strong>E-posta:</strong> kvkk@psikolog.com</li>
+              <li><strong>E-posta:</strong> psk.alaraokul@gmail.com</li>
               <li><strong>Adres:</strong> Kocaeli, Türkiye</li>
             </ul>
 

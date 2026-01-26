@@ -55,7 +55,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">İletişim</h4>
             <div className="space-y-2 text-gray-300">
-              <p>📧 info@psikolog.com</p>
+              <p>📧 psk.alaraokul@gmail.com</p>
               <p>📞 0545 710 93 11</p>
               <p>📍 İstanbul, Türkiye</p>
             </div>

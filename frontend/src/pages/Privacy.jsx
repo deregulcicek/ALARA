@@ -132,8 +132,7 @@ const Privacy = () => {
             </p>
             <ul>
               <li><strong>E-posta:</strong> kvkk@psikolog.com</li>
-              <li><strong>Telefon:</strong> +90 (555) 123 45 67</li>
-              <li><strong>Adres:</strong> Beşiktaş Mahallesi, Barbaros Bulvarı No: 123, 34353 Beşiktaş/İstanbul</li>
+              <li><strong>Adres:</strong> Kocaeli, Türkiye</li>
             </ul>
 
             <p className="text-sm text-gray-600 mt-8">

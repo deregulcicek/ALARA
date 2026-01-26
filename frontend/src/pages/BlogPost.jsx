@@ -55,7 +55,7 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{post.title} - Psikolog Blog</title>
+        <title>{post.title} - Psikolog Alara Okul Blog</title>
         <meta name="description" content={post.excerpt || generateMetaDescription(post.content)} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt || generateMetaDescription(post.content)} />
@@ -131,10 +131,10 @@ const BlogPost = () => {
                 <span className="text-primary-600 font-semibold text-lg">AY</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">Dr. Ayşe Yılmaz</h3>
-                <p className="text-gray-600">Uzman Psikolog</p>
+                <h3 className="text-lg font-semibold text-gray-900">Psikolog Alara Okul</h3>
+                <p className="text-gray-600"> Psikolog</p>
                 <p className="text-sm text-gray-500 mt-1">
-                  15 yıllık deneyim • Klinik Psikoloji Uzmanı
+                  
                 </p>
               </div>
             </div>

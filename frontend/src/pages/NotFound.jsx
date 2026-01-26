@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>404 - Sayfa Bulunamadı | Psikolog</title>
+        <title>404 - Sayfa Bulunamadı | Psikolog Alara Okul</title>
         <meta name="description" content="Aradığınız sayfa bulunamadı. Ana sayfaya dönmek için tıklayın." />
       </Helmet>
 

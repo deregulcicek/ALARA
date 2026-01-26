@@ -9,6 +9,13 @@ const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   
   const [galleryImages] = useState([
+    '/images/gallery-1.jpg',
+    '/images/gallery-2.jpg',
+    '/images/gallery-3.jpg',
+    '/images/gallery-4.jpg',
+    '/images/gallery-5.jpg',
+    '/images/gallery-6.jpg',
+    '/images/gallery-7.jpg',
     '/images/gallery-8.jpg',
     '/images/gallery-9.jpg',
     '/images/gallery-10.jpg',
@@ -19,13 +26,20 @@ const Gallery = () => {
     '/images/gallery-15.jpg',
     '/images/gallery-16.jpg',
     '/images/gallery-17.jpg',
-    '/images/gallery-20.jpg',
     '/images/gallery-18.jpg',
-    '/images/gallery-19.jpg'
+    '/images/gallery-19.jpg',
+    '/images/gallery-20.jpg'
   ])
 
   const getImageDescription = (index) => {
     const descriptions = [
+      'Etkinlik ve seminer karesi',
+      'Etkinlik ve seminer karesi',
+      'Etkinlik ve seminer karesi',
+      'Etkinlik ve seminer karesi',
+      'Etkinlik ve seminer karesi',
+      'Etkinlik ve seminer karesi',
+      'Etkinlik ve seminer karesi',
       'İzmit Kültür ve Yaşam Derneği - Kadına Yönelik Psikolojik Şiddet ve Farkındalık semineri',
       'İzmit Kültür ve Yaşam Derneği - Kadına Yönelik Psikolojik Şiddet ve Farkındalık semineri',
       'İzmit Kültür ve Yaşam Derneği - Kadına Yönelik Psikolojik Şiddet ve Farkındalık semineri',

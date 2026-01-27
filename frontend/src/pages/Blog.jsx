@@ -153,8 +153,15 @@ const Blog = () => {
             </div>
           ) : (
             <>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {posts.map((post) => (
+              {posts.length === 0 ? (
+                <div className="text-center py-20">
+                  <p className="text-xl text-gray-600">
+                    Yazılarıma yakında buradan ulaşabilirsiniz.
+                  </p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {posts.map((post) => (
                   <article key={post.id} className="card hover:shadow-lg transition-shadow duration-200">
                     {post.cover_image && (
                       <img
@@ -198,8 +205,9 @@ const Blog = () => {
                       Devamını Oku →
                     </Link>
                   </article>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
 
               {/* Load More Button */}
               {hasNext && (

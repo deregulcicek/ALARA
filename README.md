@@ -2,7 +2,7 @@
 
 A production-ready psychologist website built with Django (API) + React (Vite) with Docker Compose, designed for single VPS deployment with Caddy reverse proxy and Let's Encrypt SSL.
 
-## 🏗️ Architecture
+# Architecture
 
 - **Backend**: Django 5 + Django REST Framework
 - **Frontend**: React 18 + Vite + Tailwind CSS
@@ -11,7 +11,7 @@ A production-ready psychologist website built with Django (API) + React (Vite) w
 - **Containerization**: Docker Compose
 - **Deployment**: Single VPS (Hetzner-like)
 
-## ✨ Features
+# Features
 
 ### Backend Features
 - **Blog System**: Posts with title, slug, cover image, excerpt, content (Markdown), tags, published_at, is_published
@@ -22,28 +22,28 @@ A production-ready psychologist website built with Django (API) + React (Vite) w
 - **Security**: CSRF protection, CORS, secure cookies, rate limiting
 - **Internationalization**: Turkish (tr) default with locale-aware date formatting
 
-### Frontend Features
+# Frontend Features
 - **Pages**: Home, About, Blog (list + detail), Contact, Privacy, 404
 - **Responsive Design**: Mobile-first with Tailwind CSS
 - **SEO Optimized**: Meta tags, Open Graph, canonical URLs
 - **Form Validation**: React Hook Form + Zod validation
 - **API Integration**: Axios with error handling
 
-### DevOps Features
+# DevOps Features
 - **Docker Compose**: Multi-service setup with health checks
 - **Automatic SSL**: Caddy with Let's Encrypt
 - **CI/CD**: GitHub Actions workflow
 - **Monitoring**: Logging, health checks, backup scripts
 - **Security**: HTTPS only in production, security headers
 
-## 🚀 Quick Start
+# Quick Start
 
-### Prerequisites
+# Prerequisites
 - Docker and Docker Compose
 - Git
 - Make (optional, for convenience commands)
 
-### Development Setup
+# Development Setup
 
 1. **Clone the repository**
    ```bash
@@ -85,7 +85,7 @@ A production-ready psychologist website built with Django (API) + React (Vite) w
    - Admin: http://localhost/admin
    - API Docs: http://localhost/api/docs
 
-### Available Make Commands
+# Available Make Commands
 
 ```bash
 make up          # Start all services
@@ -98,9 +98,9 @@ make logs        # View logs
 make clean       # Clean up containers and volumes
 ```
 
-## 🏭 Production Deployment
+# Production Deployment
 
-### Automated Setup (Ubuntu 22.04)
+# Automated Setup (Ubuntu 22.04)
 
 1. **Run the setup script on your VPS**
    ```bash
@@ -126,7 +126,7 @@ make clean       # Clean up containers and volumes
    docker-compose -f docker-compose.prod.yml exec web python manage.py seed_data
    ```
 
-### Manual Setup
+# Manual Setup
 
 1. **Install Docker and Docker Compose** on your VPS
 2. **Clone the repository** to `/opt/psychologist-site`
@@ -137,33 +137,19 @@ make clean       # Clean up containers and volumes
    docker-compose -f docker-compose.prod.yml up -d
    ```
 
-## 🔧 Configuration
+# Configuration
 
-### Environment Variables
+# Environment Variables
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `DOMAIN` | Your domain name | Yes |
-| `DJANGO_SECRET_KEY` | Django secret key | Yes |
-| `POSTGRES_PASSWORD` | Database password | Yes |
-| `ANYMAIL_MAILGUN_API_KEY` | Email service API key | Yes |
-| `RECAPTCHA_SECRET_KEY` | reCAPTCHA secret key | Yes |
-| `CORS_ALLOWED_ORIGINS` | Allowed CORS origins | Yes |
-
-### Email Configuration
+# Email Configuration
 
 The application supports multiple email providers:
 
-#### Brevo (formerly Sendinblue)
-```env
-ANYMAIL_MAILGUN_API_KEY=your-brevo-api-key
-ANYMAIL_MAILGUN_SENDER_DOMAIN=your-domain.com
-```
+# Brevo (formerly Sendinblue)
 
-#### Resend
-```env
-ANYMAIL_MAILGUN_API_KEY=your-resend-api-key
-ANYMAIL_MAILGUN_SENDER_DOMAIN=your-domain.com
+
+# Resend
+IL_MAILGUN_SENDER_DOMAIN=your-domain.com
 ```
 
 ### reCAPTCHA Configuration
@@ -175,7 +161,7 @@ ANYMAIL_MAILGUN_SENDER_DOMAIN=your-domain.com
    RECAPTCHA_SITE_KEY=your-site-key
    ```
 
-## 📁 Project Structure
+# Project Structure
 
 ```
 psychologist-site/
@@ -203,39 +189,39 @@ psychologist-site/
 └── README.md              # This file
 ```
 
-## 🧪 Testing
+# Testing
 
-### Backend Tests
+# Backend Tests
 ```bash
 make test
 # or
 docker-compose exec web python manage.py test
 ```
 
-### Frontend Tests
+# Frontend Tests
 ```bash
 cd frontend
 npm test
 ```
 
-### API Testing
+# API Testing
 - OpenAPI documentation: http://localhost/api/docs
 - API schema: http://localhost/api/schema
 
-## 📊 Monitoring and Maintenance
+# Monitoring and Maintenance
 
-### Health Checks
+# Health Checks
 - Database: PostgreSQL health check
 - Backend: Gunicorn process monitoring
 - Frontend: Static file serving
 - Reverse Proxy: Caddy status
 
-### Logging
+# Logging
 - Application logs: `/opt/psychologist-site/logs/`
 - Container logs: `docker-compose logs -f`
 - System logs: `journalctl -u psychologist-site`
 
-### Backup
+# Backup
 Automated daily backups include:
 - Database dump
 - Media files
@@ -251,7 +237,7 @@ Manual backup:
 /opt/psychologist-site/update.sh
 ```
 
-## 🔒 Security Features
+# Security Features
 
 - **HTTPS Only**: Automatic SSL with Let's Encrypt
 - **Security Headers**: HSTS, CSP, X-Frame-Options, etc.
@@ -262,7 +248,7 @@ Manual backup:
 - **SQL Injection Protection**: Django ORM protection
 - **XSS Protection**: Content Security Policy
 
-## 🌐 SEO Features
+# SEO Features
 
 - **Meta Tags**: Dynamic meta tags for each page
 - **Open Graph**: Social media sharing optimization
@@ -272,7 +258,7 @@ Manual backup:
 - **RSS Feed**: Blog RSS feed
 - **Structured Data**: JSON-LD for rich snippets
 
-## 🚀 Performance Optimizations
+# Performance Optimizations
 
 - **Static File Serving**: Caddy serves static files directly
 - **Image Optimization**: Responsive images with proper sizing
@@ -280,7 +266,7 @@ Manual backup:
 - **Database Indexing**: Optimized database queries
 - **CDN Ready**: Easy CDN integration
 
-## 🤝 Contributing
+# Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -288,20 +274,20 @@ Manual backup:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+# License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Support
+# Support
 
 For support and questions:
 - Create an issue on GitHub
 - Check the documentation
 - Review the troubleshooting section
 
-## 🔄 Changelog
+# Changelog
 
-### v1.0.0
+# v1.0.0
 - Initial release
 - Django + React setup
 - Docker Compose configuration
